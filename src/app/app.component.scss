@@ -27,11 +27,20 @@
         padding-left: 80px;
         .banner-logo {
         }
-        .banner-patch {
+        .banner-patch-wrapper {
             position: absolute;
             right: 250px;
             top: 0px;
             z-index: 10000;
+            background: #303B49;
+            border-radius: 120px;
+            padding: 24px;
+        }
+        .banner-patch {
+            opacity: 80%;
+        }
+        .banner-patch:hover {
+            opacity: 100%;
         }
         .banner-menu {
             left: 0;
