@@ -251,22 +251,17 @@
 
 
 
-.content {
-    flex: 1 1 100%;
-    width: 100%;
-    max-width: 1920px;
-    margin: auto;
-    padding: 6em 8em;
-}
+
 
 .splash {
-    width: 100%;
+    margin: 2em 12em;
+    width: auto;
     display: flex;
     align-items: flex-start;
     //justify-content: flex-end;
     color: $color-gails-super-bright-white;
     .splash-text {
-        flex: 0 1 100%;
+        flex: 1.5 1;
         font-family: $font-family-display;
         font-size: 32px;
         color: $color-gails-camel;
@@ -299,13 +294,20 @@
         // }
     }
     .splash-feature-image {
-        width: 600px;
+      flex: 1 1;
+      width: 60px;
         border-top-right-radius: 120px;
         z-index: -1;
         opacity: 90%;
         clip-path: inset(2px 2px 2px 0 round 0);
-        border-left: 32px solid $color-gails-slate-blue; 
+        margin-left: 2em;
+        //border-left: 32px solid $color-gails-slate-blue; 
     }
+}
+
+
+.section {
+
 }
 
 

@@ -1,5 +1,6 @@
 @import './assets/styles/common';
 
+
 * {    
     box-sizing: border-box;
 }
@@ -15,14 +16,38 @@ body, html {
     font-style: normal; */
 }
 
-
-
 body {
     background: $color-gails-dark-gray url('assets/background.jpg'); 
     background-size: cover;                  
-    color: $color-gails-white;
+    color: $color-gails-off-white;
     font-family: $font-family-body;
+    font-size: 19px;
+    font-weight: 100;
+ }
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-display;
+    letter-spacing: -.02em
 }
+
+h1, h2 {
+    text-transform: uppercase;
+    color: $color-gails-camel;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 
 a:link { 
     text-decoration: none; 
@@ -38,4 +63,74 @@ a:hover {
 
 a:active { 
     text-decoration: none; 
+}
+
+.content {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 6em 8em;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    .section-header {
+        margin: 8em 0 4em 0;
+        display: flex;
+        direction: row;
+        align-items: center;
+        gap: 1em;
+        * {
+            display: block;
+            border: 0;
+            margin: 0;
+        }
+        div {
+            flex: 1 1 100%;
+            height: .5em;
+            background: $color-gails-tan; 
+        }
+        h2 {
+            flex-grow: 0;
+            font-size: 3em;
+            font-weight: 800;
+        }
+    }
+    .subsection {
+        margin: 0 2em;
+        h3 {
+            font-size: 2em;
+            font-weight: 800;
+            color: $color-gails-white;
+        }
+        p {
+            font-size: 108%;
+        }
+
+    }
+    .subsection:nth-child(even) {
+        .subsection-header-image {
+            float: left;
+            margin-right: 2em;
+        }
+    }
+    .subsection:nth-child(odd) {
+        .subsection-header-image {
+            float: right;
+            margin-left: 2em;
+        }
+        h3 {
+            text-align: right;
+        }
+    }
+}
+
+.footer {
+    background: $color-gails-black;
+    min-height: 8em;
+    width: 100%;
 }
