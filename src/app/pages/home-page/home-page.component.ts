@@ -3,14 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styles: [
-  ]
+  styleUrls: [ './home-page.component.scss' ]
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.debug("HomePageComponent -> constructor")
+
+  }
 
   ngOnInit(): void {
+    console.debug("HomePageComponent -> ngOnInit()")
   }
 
 }
+
+
+
