@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
-  template: `<div>Hello {{value}}</div>`,
   templateUrl: 'app.component.html',
   styleUrls: [
     'app.component.scss'
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  public title = 'sonoran';
+
+  constructor(
+    router: Router
+    ) {
+
+   
+    }
+
+  public async ngOnInit() {
+  }
+
 }
+
