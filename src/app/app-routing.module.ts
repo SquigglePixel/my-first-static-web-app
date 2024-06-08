@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
-import { AdventuresComponent } from './pages/adventures/adventures.component';
 
 const routes: Routes = [
   {
@@ -19,6 +18,11 @@ const routes: Routes = [
     path: 'adventures',
     component: ContentLayoutComponent,
     loadChildren: () => import('./pages/adventures/adventures.module').then(x => x.AdventureseModule),
+  },
+  {
+    path: 'clinics',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/clinics/clinics.module').then(x => x.ClinicsModule),
   },
   {
     path: '**',

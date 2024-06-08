@@ -8,7 +8,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import {NoopAnimationsModule, BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { LayoutModule } from "./layouts/layout.module";
-import { MainMenuComponent } from './components/main-menu/main-menu.component';
+
 
 export let AppInjector: Injector;
 

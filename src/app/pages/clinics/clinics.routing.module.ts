@@ -1,32 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdventuresComponent } from './adventures.component';
-import { PackraftingPageComponent } from './packrafting-page/packrafting-page.component';
-import { LlamaTrekkingPageComponent } from './llama-trekking-page/llama-trekking-page.component';
-import { FishingPageComponent } from './fishing-page/fishing-page.component';
-import { DiscGolfPageComponent } from './disc-golf-page/disc-golf-page.component';
+import { ClinicsComponent } from './clinics.component';
+import { PackraftOnePageComponent } from './packraft-one-page/packraft-one-page.component';
+import { GilaPrimerPageComponent } from './gila-primer-page/gila-primer-page.component';
+import { PackraftOneLabPageComponent } from './packraft-one-lab-page/packraft-one-lab-page.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: AdventuresComponent
+    component: ClinicsComponent
   },
   {
-    path: 'packrafting',
-    component: PackraftingPageComponent
+    path: 'packraft-one',
+    component: PackraftOnePageComponent
   },
   {
-    path: 'llama-trekking',
-    component: LlamaTrekkingPageComponent
-  },
+    path: 'gila-primer',
+    component: GilaPrimerPageComponent
+  },  
+  ,
   {
-    path: 'fishing',
-    component: FishingPageComponent
-  },
-  {
-    path: 'disc-golf',
-    component: DiscGolfPageComponent
-  }
+    path: 'packraft-one-lab',
+    component: PackraftOneLabPageComponent
+  }, 
 ];
 
 
@@ -34,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule { }
+export class ClinicsRoutingModule { }
