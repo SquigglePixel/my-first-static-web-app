@@ -5,10 +5,13 @@ import { PackraftOnePageComponent } from './packraft-one-page/packraft-one-page.
 import { GilaPrimerPageComponent } from './gila-primer-page/gila-primer-page.component';
 import { ClinicsRoutingModule } from './clinics.routing.module';
 import { PackraftOneLabPageComponent } from './packraft-one-lab-page/packraft-one-lab-page.component';
+import { DeluxePackraftPackagePageComponent } from './deluxe-packraft-package-page/deluxe-packraft-package-page.component';
+import { FlyTenkaraOnePageComponent } from './fly-tenkara-one-page/fly-tenkara-one-page.component';
+import { FlyAndTenkaraOneLabPageComponent } from './fly-and-tenkara-one-lab-page/fly-and-tenkara-one-lab-page.component';
 
 
 @NgModule({
-  declarations: [ClinicsComponent, PackraftOnePageComponent, GilaPrimerPageComponent, PackraftOneLabPageComponent],
+  declarations: [ClinicsComponent, PackraftOnePageComponent, GilaPrimerPageComponent, PackraftOneLabPageComponent, DeluxePackraftPackagePageComponent, FlyTenkaraOnePageComponent, FlyAndTenkaraOneLabPageComponent],
   imports: [
     CommonModule,
     ClinicsRoutingModule
