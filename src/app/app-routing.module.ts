@@ -40,6 +40,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/campground-page/campground.module').then(x => x.CampgroundModule)
   },  
   {
+    path: 'river-access',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/river-access-page/river-access.module').then(x => x.RiverAccessModule)
+  },  
+  {
     path: '**',
     redirectTo: '/home'
   },
