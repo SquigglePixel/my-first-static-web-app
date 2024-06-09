@@ -45,6 +45,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/river-access-page/river-access.module').then(x => x.RiverAccessModule)
   },  
   {
+    path: 'events',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/events/events.module').then(x => x.EventsModule)
+  },  
+  {
     path: '**',
     redirectTo: '/home'
   },
