@@ -17,12 +17,17 @@ const routes: Routes = [
   {
     path: 'adventures',
     component: ContentLayoutComponent,
-    loadChildren: () => import('./pages/adventures/adventures.module').then(x => x.AdventureseModule),
+    loadChildren: () => import('./pages/adventures/adventures.module').then(x => x.AdventureseModule)
   },
   {
     path: 'clinics',
     component: ContentLayoutComponent,
-    loadChildren: () => import('./pages/clinics/clinics.module').then(x => x.ClinicsModule),
+    loadChildren: () => import('./pages/clinics/clinics.module').then(x => x.ClinicsModule)
+  },
+  {
+    path: 'shuttles',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/shuttles/shuttles.module').then(x => x.ShuttlesModule)
   },
   {
     path: '**',
