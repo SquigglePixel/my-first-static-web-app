@@ -13,7 +13,7 @@ import { LayoutModule } from "./layouts/layout.module";
 export let AppInjector: Injector;
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
