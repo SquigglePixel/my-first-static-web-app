@@ -50,6 +50,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/events/events.module').then(x => x.EventsModule)
   },  
   {
+    path: 'rentals',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/rentals-page/rentals.module').then(x => x.RentalsModule)
+  },  
+  {
+    path: 'videos',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/videos-page/videos.module').then(x => x.VideosModule)
+  },  
+  {
     path: '**',
     redirectTo: '/home'
   },

@@ -9,12 +9,13 @@ import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import {NoopAnimationsModule, BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { LayoutModule } from "./layouts/layout.module";
 import { RentalsPageComponent } from './pages/rentals-page/rentals-page.component';
+import { VideosPageComponent } from './pages/videos-page/videos-page.component';
 
 
 export let AppInjector: Injector;
 
 @NgModule({
-  declarations: [AppComponent, RentalsPageComponent ],
+  declarations: [AppComponent, RentalsPageComponent, VideosPageComponent ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
