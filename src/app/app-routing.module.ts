@@ -58,11 +58,7 @@ const routes: Routes = [
     path: 'videos',
     component: ContentLayoutComponent,
     loadChildren: () => import('./pages/videos-page/videos.module').then(x => x.VideosModule)
-  },  
-  {
-    path: '**',
-    redirectTo: '/home'
-  },
+  }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
