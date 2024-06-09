@@ -35,6 +35,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/mrs-packrafts-page/mrs-packrafts.module').then(x => x.MrsPackraftsModule)
   },
   {
+    path: 'campground',
+    component: ContentLayoutComponent,
+    loadChildren: () => import('./pages/campground-page/campground.module').then(x => x.CampgroundModule)
+  },  
+  {
     path: '**',
     redirectTo: '/home'
   },
