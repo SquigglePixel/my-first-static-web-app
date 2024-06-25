@@ -10,7 +10,7 @@ import {NoopAnimationsModule, BrowserAnimationsModule} from '@angular/platform-b
 import { LayoutModule } from "./layouts/layout.module";
 import { RentalsPageComponent } from './pages/rentals-page/rentals-page.component';
 import { VideosPageComponent } from './pages/videos-page/videos-page.component';
-
+import { NgxPayPalModule } from 'ngx-paypal';
 
 export let AppInjector: Injector;
 
@@ -26,7 +26,7 @@ export let AppInjector: Injector;
     RouterModule,
     AppRoutingModule,
     LayoutModule,
-
+    NgxPayPalModule
   ],
   exports: [
   

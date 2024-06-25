@@ -1,6 +1,7 @@
 @import './assets/styles/common';
 
 
+
 * {    
     box-sizing: border-box;
 }
@@ -17,13 +18,33 @@ body, html {
 }
 
 body {
-    background: $color-gails-dark-gray url('assets/background.jpg'); 
+    background: $color-background url('assets/background.jpg'); 
     background-size: cover;                  
     color: $color-gails-off-white;
     font-family: $font-family-body;
     font-size: 19px;
     font-weight: 100;
- }
+}
+
+a:link { 
+    color: $color-link; 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    color: $color-visited; 
+    text-decoration: none; 
+} 
+
+a:hover { 
+    color: $color-hover; 
+    text-decoration: none; 
+} 
+
+a:active { 
+    color: $color-active; 
+    text-decoration: none; 
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,23 +69,6 @@ h2 {
     font-size: 2em;
 }
 
-
-a:link { 
-    text-decoration: none; 
-} 
-
-a:visited { 
-    text-decoration: none; 
-} 
-
-a:hover { 
-    text-decoration: none; 
-} 
-
-a:active { 
-    text-decoration: none; 
-}
-
 .content {
     flex: 1 1 100%;
     width: 100%;
@@ -75,7 +79,7 @@ a:active {
 
 
 .section {
-    margin: 8em;
+    margin: 4em 8em 8em 8em;
     display: flex;
     flex-direction: column;
     gap: 4em;

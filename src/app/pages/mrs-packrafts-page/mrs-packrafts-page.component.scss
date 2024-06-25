@@ -1,0 +1,29 @@
+@import './../../../assets/styles/common.scss';
+
+
+.link-wrapper {
+    display: block;
+    margin-top: 2em;
+    border: 1px solid $color-foreground;
+    border-radius: 12px;
+    width:min-content;
+    &:hover {
+        border: 1px solid $color-gails-super-bright-white;
+        * {
+            color: $color-gails-super-bright-white !important;
+            opacity: 1;
+        }
+    }
+    img {
+        opacity: .75;
+        height: 140px; 
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+    a {
+        margin: .35em .5em;
+        font-size: smaller;
+        font-style: italic;
+        display: block;
+    }
+}
